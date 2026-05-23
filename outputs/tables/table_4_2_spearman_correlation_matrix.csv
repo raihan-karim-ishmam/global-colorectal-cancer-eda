@@ -1,0 +1,5 @@
+,Colorectal cancer ASR,Obesity prevalence (%),Physical activity prevalence (%),Log GDP per capita
+Colorectal cancer ASR,1.0,0.3622,-0.2654,0.7948
+Obesity prevalence (%),0.3622,1.0,-0.5532,0.468
+Physical activity prevalence (%),-0.2654,-0.5532,1.0,-0.3611
+Log GDP per capita,0.7948,0.468,-0.3611,1.0

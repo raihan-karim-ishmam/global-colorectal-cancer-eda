@@ -1,0 +1,16 @@
+section,item,value
+Dataset size,Countries before complete-case filtering,186
+Dataset size,Countries after complete-case filtering,173
+Dataset size,Countries dropped due to missing core variables,13
+Regional structure,Number of regions,6
+Regional structure,Region categories,"Africa, Americas, Asia, Europe, Middle East, Oceania"
+Middle East subgroup,Middle East countries in final dataset,16
+Variable and unit,country_name,Country name
+Variable and unit,country_code,ISO3 country code
+Variable and unit,asr_world / cancer_index,"Colorectal cancer incidence ASR, World standard population, per 100,000"
+Variable and unit,obesity_value,"Adult obesity prevalence, %, age 18+, 2022"
+Variable and unit,activity_value,"Adult insufficient physical activity prevalence, %, age 18+, 2022"
+Variable and unit,gdp_per_capita_2022,"GDP per capita, current US$, 2022"
+Variable and unit,log_gdp,Natural logarithm of GDP per capita
+Variable and unit,region,Broad world region used for regional comparison
+Variable and unit,middle_east_flag,Boolean indicator for Middle Eastern countries

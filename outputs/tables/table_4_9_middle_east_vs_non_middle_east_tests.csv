@@ -1,0 +1,5 @@
+Variable,Middle East n,Non-Middle East n,Middle East median,Non-Middle East median,Middle East mean,Non-Middle East mean,Mann-Whitney U,p-value,Interpretation
+Colorectal cancer ASR,16,157,12.3,12.4,14.05,16.401,1268.0,0.95195,No significant difference
+Obesity prevalence (%),16,157,35.035,21.0,34.501,20.54,2182.5,1e-06,Significant difference
+Physical activity prevalence (%),16,157,57.365,77.22,55.485,74.643,329.0,1e-06,Significant difference
+Log GDP per capita,16,157,9.675,8.713,9.485,8.733,1634.0,0.04793,Significant difference

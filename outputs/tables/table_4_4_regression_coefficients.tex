@@ -1,0 +1,27 @@
+\begin{table}
+\centering
+\caption{Regression coefficients for models predicting colorectal cancer incidence ASR.}
+\label{tab:regression_coefficients}
+\begin{tabular}{llrrrrr}
+\toprule
+                            Model &                     Term &  Coefficient &  Std. Error &  p-value &  95% CI Lower &  95% CI Upper \\
+\midrule
+          Model 1: Lifestyle only &                Intercept &      11.9148 &      6.4210 & 0.065243 &       -0.7604 &       24.5901 \\
+          Model 1: Lifestyle only &            obesity_value &       0.2508 &      0.0860 & 0.004034 &        0.0810 &        0.4206 \\
+          Model 1: Lifestyle only &           activity_value &      -0.0166 &      0.0716 & 0.817369 &       -0.1578 &        0.1247 \\
+         Model 2: Lifestyle + GDP &                Intercept &     -44.7474 &      5.6254 & 0.000000 &      -55.8526 &      -33.6422 \\
+         Model 2: Lifestyle + GDP &            obesity_value &      -0.0420 &      0.0595 & 0.481376 &       -0.1594 &        0.0754 \\
+         Model 2: Lifestyle + GDP &           activity_value &       0.0917 &      0.0473 & 0.054327 &       -0.0017 &        0.1851 \\
+         Model 2: Lifestyle + GDP &                  log_gdp &       6.2671 &      0.4143 & 0.000000 &        5.4493 &        7.0849 \\
+Model 3: Lifestyle + GDP + Region &                Intercept &     -16.2990 &      5.8487 & 0.005952 &      -27.8476 &       -4.7505 \\
+Model 3: Lifestyle + GDP + Region &    C(region)[T.Americas] &       1.7106 &      1.8391 & 0.353662 &       -1.9207 &        5.3420 \\
+Model 3: Lifestyle + GDP + Region &        C(region)[T.Asia] &       2.3774 &      1.4392 & 0.100466 &       -0.4643 &        5.2191 \\
+Model 3: Lifestyle + GDP + Region &      C(region)[T.Europe] &      12.7796 &      1.7527 & 0.000000 &        9.3188 &       16.2405 \\
+Model 3: Lifestyle + GDP + Region & C(region)[T.Middle East] &      -1.9917 &      2.2650 & 0.380507 &       -6.4640 &        2.4806 \\
+Model 3: Lifestyle + GDP + Region &     C(region)[T.Oceania] &       6.8694 &      2.6543 & 0.010520 &        1.6283 &       12.1104 \\
+Model 3: Lifestyle + GDP + Region &            obesity_value &      -0.0075 &      0.0614 & 0.902343 &       -0.1288 &        0.1137 \\
+Model 3: Lifestyle + GDP + Region &           activity_value &      -0.0611 &      0.0477 & 0.202007 &       -0.1552 &        0.0331 \\
+Model 3: Lifestyle + GDP + Region &                  log_gdp &       3.7945 &      0.4627 & 0.000000 &        2.8809 &        4.7082 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,5 @@
+Variable,PC1,PC2,PC3,PC4
+Colorectal cancer ASR,-0.509,0.555,-0.087,-0.652
+Obesity prevalence,-0.476,-0.454,0.745,-0.114
+Physical activity prevalence,0.41,0.62,0.658,0.121
+Log GDP per capita,-0.589,0.318,-0.069,0.74

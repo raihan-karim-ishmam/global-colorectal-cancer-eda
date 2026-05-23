@@ -1,0 +1,5 @@
+Variable,Number of regions,Kruskal-Wallis H,p-value,Interpretation
+Colorectal cancer ASR,6,100.6207,0.0,Significant regional difference
+Obesity prevalence (%),6,90.7523,0.0,Significant regional difference
+Physical activity prevalence (%),6,74.5916,0.0,Significant regional difference
+Log GDP per capita,6,91.5631,0.0,Significant regional difference
