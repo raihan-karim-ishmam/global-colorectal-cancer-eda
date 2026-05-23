@@ -1,2 +1,225 @@
-# global-colorectal-cancer-eda
-COMP6605 Data Exploration and Visualization term paper project analyzing global colorectal cancer incidence using EDA, inferential statistics, PCA, and regional comparisons.
+# Global Colorectal Cancer Incidence Analysis
+
+This repository contains the code, data structure, and generated outputs for the COMP6605 Data Exploration and Visualization term paper. The project analyzes 2022 country-level colorectal cancer incidence in relation to obesity, adult physical activity, GDP per capita, world region, and a Middle East subgroup indicator.
+
+The analysis is global and cross-regional. Middle Eastern countries are highlighted as a subgroup, but the main dataset and models are based on the broader country-level sample.
+
+## Project Overview
+
+The study uses publicly available country-level datasets and combines them into a single master dataset. The workflow includes data preprocessing, data processing, exploratory visualization, inferential statistics, regression analysis, PCA, and additional advanced visual analysis.
+
+Main analytical focus:
+
+- Outcome variable: colorectal cancer age-standardized incidence rate, ASR World
+- Main explanatory/profile variables: adult obesity, adult physical activity, GDP per capita, log GDP per capita, world region, and Middle East flag
+- Main methods: descriptive statistics, regional comparisons, Spearman correlation, regression models, PCA, and supporting visual analysis
+
+## Repository Structure
+
+```text
+project-root/
+│
+├── data/
+│   ├── gdp.csv
+│   ├── cancer.csv
+│   ├── obesity.csv
+│   └── activity.csv
+│
+├── outputs/
+│   ├── preprocessed_all_master.csv
+│   ├── preprocessed__middle_east_master.csv
+│   ├── processed_all_master.csv
+│   │
+│   ├── figures/
+│   │   └── generated figures from analysis notebooks
+│   │
+│   └── tables/
+│       └── generated CSV and LaTeX tables
+│
+├── data_preprocessing.ipynb
+├── data_processing.ipynb
+├── analysis.ipynb
+├── advanced_analysis.ipynb
+├── README.md
+├── requirements.txt
+└── term_paper.pdf
+```
+
+The `term_paper.pdf` file is the final written paper. The notebook files and the `outputs/` folder provide the reproducibility materials for the reported tables and figures.
+
+## Notebook Order
+
+Run the notebooks in this order.
+
+### 1. `data_preprocessing.ipynb`
+
+Combines the raw country-level datasets into a first master file.
+
+Input files:
+
+- `data/gdp.csv`
+- `data/cancer.csv`
+- `data/obesity.csv`
+- `data/activity.csv`
+
+Main outputs:
+
+- `outputs/preprocessed_all_master.csv`
+- `outputs/preprocessed__middle_east_master.csv` if the selected-country option is enabled
+
+### 2. `data_processing.ipynb`
+
+Takes the preprocessed master dataset and prepares the final analysis-ready file.
+
+Input file:
+
+- `outputs/preprocessed_all_master.csv`
+
+Main outputs:
+
+- `outputs/processed_all_master.csv`
+- summary tables in `outputs/tables/`
+
+This notebook creates derived variables, regional labels, complete-case filtering, standardized variables, and early summary tables.
+
+### 3. `analysis.ipynb`
+
+Runs the main statistical analysis.
+
+Input file:
+
+- `outputs/processed_all_master.csv`
+
+Main outputs include:
+
+- Spearman correlation matrix and p-value table
+- Shapiro-Wilk normality test table
+- Kruskal-Wallis regional comparison table
+- regression coefficient and model fit tables
+- PCA explained variance, loadings, country scores, and centroid tables
+- PCA figures
+- Middle East vs non-Middle East comparison table
+
+Outputs are saved under:
+
+- `outputs/tables/`
+- `outputs/figures/`
+
+### 4. `advanced_analysis.ipynb`
+
+Contains the additional visualization and supporting analysis notebook.
+
+Input file:
+
+- `outputs/processed_all_master.csv`
+
+Main outputs:
+
+- supporting figures for global, regional, and Middle East subgroup visual analysis
+- appendix/supporting plots where relevant
+
+Outputs are saved under:
+
+- `outputs/figures/`
+
+## Environment Setup
+
+This project was developed using Python and Jupyter Notebook.
+
+Recommended setup:
+
+```bash
+python -m venv .venv
+```
+
+Activate the environment.
+
+On Windows:
+
+```bash
+.venv\Scripts\activate
+```
+
+On macOS/Linux:
+
+```bash
+source .venv/bin/activate
+```
+
+Install the required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+Then open Jupyter:
+
+```bash
+jupyter notebook
+```
+
+or use VS Code with the selected virtual environment.
+
+## Main Python Packages
+
+The analysis uses the following main packages:
+
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- scipy
+- statsmodels
+- scikit-learn
+- country_converter
+- jupyter
+
+Exact package versions should be listed in `requirements.txt`.
+
+## Reproducing the Results
+
+To reproduce the full workflow:
+
+1. Place the four raw datasets inside the `data/` folder.
+2. Run `data_preprocessing.ipynb`.
+3. Run `data_processing.ipynb`.
+4. Run `analysis.ipynb`.
+5. Run `advanced_analysis.ipynb`.
+6. Check the generated files in `outputs/tables/` and `outputs/figures/`.
+
+All tables and figures used in the paper are generated by the notebooks and saved into the `outputs/` folder.
+
+## Data Notes
+
+The raw datasets are stored in `data/`. The processed files in `outputs/` are generated from these raw files through the preprocessing and processing notebooks.
+
+The final complete-case analysis dataset is:
+
+```text
+outputs/processed_all_master.csv
+```
+
+The study is ecological and country-level, so the results describe associations between country-level indicators. They should not be interpreted as individual-level causal effects.
+
+## Version Control Notes
+
+The repository is intended to be version-controlled using Git. A suitable commit sequence would include:
+
+1. Initial project structure and raw data setup
+2. Data preprocessing notebook
+3. Data processing notebook and processed master dataset
+4. Main statistical analysis notebook
+5. Advanced analysis and supporting figures
+6. Final paper and README updates
+
+Generated outputs are included for reproducibility, but they can also be regenerated by running the notebooks in order.
+
+## Suggested Citation or Reference Use
+
+The final paper contains the full academic references. This repository is mainly for code, data workflow, and reproducibility.
+
+## Author
+
+Raihan Karim Ishmam  
+COMP6605 Data Exploration and Visualization  
+Sultan Qaboos University
