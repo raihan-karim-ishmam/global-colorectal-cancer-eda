@@ -1,4 +1,4 @@
-# Global Colorectal Cancer Incidence Analysis
+# Global Colorectal Cancer and Factors Analysis
 
 This repository contains the code, data structure, and generated outputs for the COMP6605 Data Exploration and Visualization term paper. The project analyzes 2022 country-level colorectal cancer incidence in relation to obesity, adult physical activity, GDP per capita, world region, and a Middle East subgroup indicator.
 
@@ -42,7 +42,10 @@ project-root/
 ├── advanced_analysis.ipynb
 ├── README.md
 ├── requirements.txt
-└── term_paper.pdf
+|── Term Paper.pdf
+├── Term Paper..docx
+└── rferences.bib
+
 ```
 
 The `term_paper.pdf` file is the final written paper. The notebook files and the `outputs/` folder provide the reproducibility materials for the reported tables and figures.
@@ -221,5 +224,6 @@ The final paper contains the full academic references. This repository is mainly
 ## Author
 
 Raihan Karim Ishmam  
+Alhussain Ali Alharthi
 COMP6605 Data Exploration and Visualization  
 Sultan Qaboos University
