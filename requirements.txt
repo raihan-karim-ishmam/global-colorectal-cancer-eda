@@ -1,0 +1,27 @@
+# Core data handling
+pandas>=2.2
+numpy>=2.0
+openpyxl>=3.1
+
+# Visualization
+matplotlib>=3.8
+seaborn>=0.13
+adjustText>=1.2
+
+# Statistical analysis and modeling
+scipy>=1.11
+statsmodels>=0.14
+scikit-learn>=1.4
+
+# Country/region harmonization
+country_converter>=1.2
+
+# Table/export support
+jinja2>=3.1
+tabulate>=0.9
+
+# Notebook execution
+jupyter>=1.0
+notebook>=7.0
+ipykernel>=6.0
+nbconvert>=7.0
